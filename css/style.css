@@ -26,8 +26,16 @@ body{
 }
 .category-hover>li>a{
     text-decoration: none !important;
+    color: black;
+    margin-left:30px;
 }
 .category-hover>li:hover{
+
+    transition-property: background-color;
+    transition-duration: 0.9s;
+    transition-timing-function: linear;
+    color: green;
+    cursor:pointer;
     background-color: #daa520;
     border: 1px solid black;
 }
@@ -39,13 +47,13 @@ body{
     width: 300px;
     -webkit-transition: -webkit-transform 0.1s ease-out;
     -moz-transition: -moz-transform 0.1s ease-out;
-     transition: transform 0.1s ease-out;
+     
      opacity: 0.9;
      cursor: pointer;
      height: 240px !important;
  }
  .img:hover{
-    transition-property: width;
+    transition: transform 0.4s ease-in-out;;
     transform: scale(1.50, 1.50);
     cursor: pointer;
     opacity: 1;
@@ -66,6 +74,10 @@ body{
  .hovable-items>li{
     font-family: eartfont;
     font-size: 40px;
+ }
+ /*cor dos itens do menu principal*/
+ .hovable-items>li>a{
+    color: white !important;
  }
  .hovable-items>li:hover{
     transition-property: background-color;
