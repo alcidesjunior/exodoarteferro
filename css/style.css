@@ -3,12 +3,33 @@
     src: url('fonts/RemachineScript_Personal_Use.ttf');
 }
 body{
-	background-color: #daa520;
+	background-color: #FAFAFA;
 }
 .glass{
 	z-index: 2;
 	background-color: rgba(255,255,255,0.6);
 	padding: 25px;
+}
+.category{
+    z-index: 2;
+    margin-left:0;
+    padding: 10px;
+    padding-top: 0;
+}
+.category-hover{
+    background-color: rgba(255,255,255,0.6);
+    list-style-type: none;
+    padding-left:0px;
+}
+.category-hover>li{
+    padding:10px;
+}
+.category-hover>li>a{
+    text-decoration: none !important;
+}
+.category-hover>li:hover{
+    background-color: #daa520;
+    border: 1px solid black;
 }
 .padding-left-less{
 }
@@ -19,7 +40,7 @@ body{
      transition: transform 0.1s ease-out;
      opacity: 0.9;
      cursor: pointer;
-     height: 256px !important;
+     height: 240px !important;
  }
  .img:hover{
     transition-property: width;
@@ -29,7 +50,13 @@ body{
     z-index:1;
  }
  .thumbnail{
- 	height:370px;
+ 	height:360px;
+ }
+ .thumbnail-footer{
+    background-color: rgba(0,0,0,0.07);
+ }
+ hr{
+    border: 2px solid black;
  }
  nav{
     height:87px !important;
@@ -44,4 +71,12 @@ body{
     transition-timing-function: linear;
     background-color: #daa520;
     border-radius-top-right: 4px;
+    padding: 10px;
+    border: 2px solid black;
+ }
+ .caption{
+    font-family: "terminal","courier new","arial"
+ }
+ h5{
+    font-size: 10px;
  }
