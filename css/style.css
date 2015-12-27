@@ -34,6 +34,8 @@ body{
 .padding-left-less{
 }
 .img{
+    background-color: black;
+    border:2px solid black;
     width: 300px;
     -webkit-transition: -webkit-transform 0.1s ease-out;
     -moz-transition: -moz-transform 0.1s ease-out;
