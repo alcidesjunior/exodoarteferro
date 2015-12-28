@@ -9,9 +9,6 @@
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-    <div>
-        <img src="image/logo.png" class="logo">
-    </div>
     <?php include "includes/includes.php";?>
     <div class="container-fluid padding-left-less">
         <div class="col-sm-9 glass pull-right">
