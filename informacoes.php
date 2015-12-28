@@ -9,13 +9,11 @@
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-    <div id="js"></div>
-    <div id="css"></div>
-    <div id="menu">
-    </div><br>
+    <div>
+        <img src="image/logo.png" class="logo">
+    </div>
+    <?php include "includes/includes.php";?>
     <div class="container-fluid padding-left-less">
-            
-        <div id="category-menu" ></div>
         <div class="col-sm-9 glass pull-right">
             <h1>O FORMULÁRIO DEVE FICAR AQUI</h1>
             <p>você pode se basear no site antigo, lá tem informações que <br>

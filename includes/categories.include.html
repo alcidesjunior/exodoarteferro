@@ -1,19 +1,21 @@
 <script type="text/javascript">
+$(document).ready(function(){
 	$('.category-hover>li').each(function(index){
 		$(this).click(function(){
 			window.location=$(this).attr('target');
 		});
 	});
+});
 </script>
 <div class="col-sm-3 category pull-left">
             <div class="row">
                 <div class="col-sm-12">
 	               	<h2><span class="fa fa-th-list"></span> Categorias</h2>
                     <ul class="nav-stacked category-hover">
-                        <li target="index.html?category=umbrella"><a class="fa fa-bookmark"> Umbrella</a></li>
-                        <li target="index.html?category=mini-bicicletinha"><a  class="fa fa-bookmark"> Mini-biclicetinha</a></li>
-                        <li target="index.html?category=outro"><a  class="fa fa-bookmark"> Outro</a></li>
-                        <li target="index.html?category=outrox"><a  class="fa fa-bookmark"> Outrox</a></li>
+                        <li target="index.php?category=umbrella"><a class="fa fa-bookmark"> Umbrella</a></li>
+                        <li target="index.php?category=mini-bicicletinha"><a  class="fa fa-bookmark"> Mini-biclicetinha</a></li>
+                        <li target="index.php?category=outro"><a  class="fa fa-bookmark"> Outro</a></li>
+                        <li target="index.php?category=outrox"><a  class="fa fa-bookmark"> Outrox</a></li>
                     </ul>
                 </div>
             </div>

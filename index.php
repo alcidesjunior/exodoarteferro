@@ -9,17 +9,11 @@
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-<div>
+    <div>
         <img src="image/logo.png" class="logo">
     </div>
-    <div id="js"></div>
-    <div id="css"></div>
-    <div id="menu">
-    </div>
-    
+    <?php include "includes/includes.php";?>
     <div class="container-fluid padding-left-less">
-            
-        <div id="category-menu"></div>
     	<div class="col-sm-9 glass pull-right">
             <div class="row">
                 <div class="col-sm-12 pull-right">
