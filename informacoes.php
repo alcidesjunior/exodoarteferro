@@ -17,13 +17,7 @@
             <p><b>E-mail:</b><br>
             exodoarteferro@gmail.com<br>
             <br>
-
-            <b>Celular:</b><br>
-            OI (85) 98810-0430<br>
-            TIM (85) 99644-7453<br><br>
-
             <p><b>Fortaleza, CE, Brasil</b></p>
-
             <p><i class="fa fa-phone"></i> 
                 <abbr title="Celular">C</abbr>: OI (85) 98810-0430</p>
             <p><i class="fa fa-phone"></i> 
@@ -58,7 +52,7 @@
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
 
