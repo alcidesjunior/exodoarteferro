@@ -3,9 +3,9 @@ if(!isset($_POST['submit'])){
 	header("Location: index.php");
 }
 	require 'phpmailer/PHPMailerAutoload.php';
-	$email_usuario = "alcidesjunior.infor@gmail.com";
-	$nome_usuario = "Alcides Junior";
-	$mensagem = "<h1>Meu texto aqui.</h1>";
+	$email_usuario = addslashes($_POST['email']);
+	$nome_usuario = addslashes($_POST['nome']);
+	$mensagem = addslashes(nl2br($_POST['mensagem']));
 	$mail = new PHPMailer;
 
 	//$mail->SMTPDebug = 3;                               // Enable verbose debug output
@@ -14,7 +14,7 @@ if(!isset($_POST['submit'])){
 	$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
 	$mail->Username = 'exodoarteferro@gmail.com';                 // SMTP username
-	$mail->Password = 'web14081994#@';                           // SMTP password
+	$mail->Password = '';                           // SMTP password
 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 	$mail->Port = 587;                                    // TCP port to connect to
 

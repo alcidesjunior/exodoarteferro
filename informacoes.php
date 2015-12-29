@@ -35,19 +35,19 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Nome:</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <input type="text" autofocus class="form-control" id="name" name="nome" required >
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Email:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                            <input type="email" class="form-control" id="email" required name="email">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Mensagem:</label>
-                            <textarea rows="6" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                            <textarea rows="6" cols="100" class="form-control" id="message" name="mensagem" required style="resize:none"></textarea>
                         </div>
                     </div>
                     <div id="success"></div>
