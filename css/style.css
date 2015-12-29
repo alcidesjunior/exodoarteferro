@@ -91,7 +91,6 @@ body{
     transition-timing-function: linear;
     background-color: #daa520;
     border-radius-top-right: 4px;
-    padding: 10px;
     border: 2px solid black;
  }
  .caption{
