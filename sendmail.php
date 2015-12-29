@@ -1,4 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf8">
+<title>Êxodo Arte Ferro</title>
+	<style>
+		body{
+			background-color: black !important;
+		}
+	</style>
+</head>
+<body>
 <?php
+include "includes/css.include.html";
 if(!isset($_POST['submit'])){
 	header("Location: index.php");
 }
@@ -26,9 +39,13 @@ if(!isset($_POST['submit'])){
 	$mail->Body    = $mensagem;
 
 	if(!$mail->send()) {
+		echo "<div class='alert alert-danger'><center><h3>Mensagem não enviada... Mailer Error: ". $mail->ErrorInfo.". <br>Você será redirecionado em 3 segundos...</h3></center></div>";
 	    echo 'Messagem não foi enviada.';
 	    echo 'Mailer Error: ' . $mail->ErrorInfo;
 	} else {
-	    echo 'Messagem enviada com sucesso!';
+	    echo "<div class='alert alert-success'><center><h3>Mensagem enviada com sucesso!<br>Você será redirecionado em 3 segundos...</h3></center></div>";
 	}
+	echo "<script>setInterval(function(){window.location='index.php'},3000);</script>";
 ?>
+</body>
+</html>
