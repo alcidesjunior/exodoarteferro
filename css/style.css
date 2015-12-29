@@ -85,6 +85,19 @@ body{
  .hovable-items>li>a{
     color: white !important;
  }
+ @media (max-width: 768px) {
+    .category, #logo{
+        display: none;
+    }
+    .col-sm-9{
+        width: 100% !important;
+    }
+    nav{
+        height:auto  !important;
+        border:  0 !important;
+        border-radius: 0 !important;
+    }
+}
  .hovable-items>li:hover{
     transition-property: background-color;
     transition-duration: 0.9s;
